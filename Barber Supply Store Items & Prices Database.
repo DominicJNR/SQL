@@ -1,0 +1,28 @@
+-Barber supply store database
+
+CREATE TABLE barber_supply (id INTEGER PRIMARY KEY, name TEXT, year_purchased INTEGER, store TEXT, price INTEGER);
+
+INSERT INTO barber_supply VALUES (1, "babyliss pro fx clipper", 2020, "Amazon", 150);
+INSERT INTO barber_supply VALUES (2, "wahl magic clip", 2019, "Amazon", 70);
+INSERT INTO barber_supply VALUES (3, "neck strips", 2021, "Amazon", 15);
+INSERT INTO barber_supply VALUES (4, "shave gel", 2021, "Sallys", 10);
+INSERT INTO barber_supply VALUES (5, "scissors", 2021, "Amazon", 10);
+INSERT INTO barber_supply VALUES (6, "lo-pro fx clipper", 2022, "babyliss", 10);
+INSERT INTO barber_supply VALUES (7, "Wahl shaver", 2022, "Amazon", 50);
+INSERT INTO barber_supply VALUES (8, "babyliss pro fx trimmer", 2020, "Amazon", 130);
+INSERT INTO barber_supply VALUES (9, "lo-pro fx trimmer", 2022, "babyliss", 170);
+INSERT INTO barber_supply VALUES (10, "straight razor", 2019, "Amazon", 15);
+INSERT INTO barber_supply VALUES (11, "neck duster", 2019, "Amazon", 11.99);
+INSERT INTO barber_supply VALUES (12, "hair blower", 2022, "Amazon", 50);
+INSERT INTO barber_supply VALUES (13, "after shave", 2021, "sallys", 10.99);
+INSERT INTO barber_supply VALUES (14, "Witch Hazel", 2021, "walmart", 8.99);
+INSERT INTO barber_supply VALUES (15, "Cordless compressor", 2022, "tomb-45", 199.99);
+
+--Display select items sold at your store.
+SELECT * FROM barber_supply;
+
+--Order items sold by price
+SELECT * FROM barber_supply ORDER BY price desc;
+
+--Sum up the prices of every item.
+SELECT SUM(price) FROM barber_supply;
