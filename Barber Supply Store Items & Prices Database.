@@ -18,11 +18,11 @@ INSERT INTO barber_supply VALUES (13, "after shave", 2021, "sallys", 10.99);
 INSERT INTO barber_supply VALUES (14, "Witch Hazel", 2021, "walmart", 8.99);
 INSERT INTO barber_supply VALUES (15, "Cordless compressor", 2022, "tomb-45", 199.99);
 
---Display select items sold at your store.
+--Here, I displayed select items sold at my store.
 SELECT * FROM barber_supply;
 
---Order items sold by price
+--Ordered the items sold at my store by price. 
 SELECT * FROM barber_supply ORDER BY price desc;
 
---Sum up the prices of every item.
+--Summed up the prices of every item.
 SELECT SUM(price) FROM barber_supply;
