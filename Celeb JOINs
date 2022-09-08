@@ -8,7 +8,16 @@ INSERT INTO celebrities VALUES (2, "Tatum", "Basketballer");
 INSERT INTO celebrities VALUES (3,"Usher","Musician");
 INSERT INTO celebrities VALUES (4,"Akon","Musician");
 INSERT INTO celebrities VALUES (5,"Jordan","Basketballer");
-INSERT INTO celebrities VALUES (6,"Butler", "Basketballer");
+INSERT INTO celebrities VALUES (6,"Butler","Basketballer");
+INSERT INTO celebrities VALUES (7,"Dwayne Johnson","Actor");
+INSERT INTO celebrities VALUES (8,"Brad Pitt","Actor");
+INSERT INTO celebrities VALUES (9,"Nas", "Musician");
+INSERT INTO celebrities VALUES (10,"Dempsey", "Soccer Player");
+INSERT INTO celebrities VALUES (11,"Lamar Jackson", "Football Player");
+INSERT INTO celebrities VALUES (12,"Weston McKennie","Soccer Player");
+INSERT INTO celebrities VALUES (13,"Justin Tucker","Football Player");
+INSERT INTO celebrities VALUES (14,"Shaq","Basketballer");
+INSERT INTO celebrities VALUES (15,"Nelly","Musician");
 
 CREATE TABLE states (celeb_id INTEGER,
                      state TEXT);
@@ -18,6 +27,15 @@ INSERT INTO states (celeb_id, state) VALUES(3,"Texas");
 INSERT INTO states (celeb_id, state) VALUES(4,"Missouri");
 INSERT INTO states (celeb_id, state) VALUES(5,"New York");
 INSERT INTO states (celeb_id, state) VALUES(6,"Texas");
+INSERT INTO states (celeb_id, state) VALUES(7,"California");
+INSERT INTO states (celeb_id, state) VALUES(8,"Oklahoma");
+INSERT INTO states (celeb_id, state) VALUES(9,"New York");
+INSERT INTO states (celeb_id, state) VALUES(10,"Texas");
+INSERT INTO states (celeb_id, state) VALUES(11,"Florida");
+INSERT INTO states (celeb_id, state) VALUES(12,"Washington");
+INSERT INTO states (celeb_id, state) VALUES(13,"Texas");
+INSERT INTO states (celeb_id, state) VALUES(14,"New Jersey");
+INSERT INTO states (celeb_id, state) VALUES(15,"Texas");
 
 --Here, I selected both tables with a join to show each celebrities' name next to their profession and state.
 SELECT c.name, c.profession, s.state
