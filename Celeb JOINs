@@ -1,0 +1,33 @@
+CREATE TABLE celebrities (id INTEGER PRIMARY KEY 
+                          AUTOINCREMENT, 
+                          name TEXT,
+                          profession TEXT);
+              
+INSERT INTO celebrities VALUES (1,"JayZ","Musician");
+INSERT INTO celebrities VALUES (2, "Tatum", "Basketballer");
+INSERT INTO celebrities VALUES (3,"Usher","Musician");
+INSERT INTO celebrities VALUES (4,"Akon","Musician");
+INSERT INTO celebrities VALUES (5,"Jordan","Basketballer");
+INSERT INTO celebrities VALUES (6,"Butler", "Basketballer");
+
+CREATE TABLE states (celeb_id INTEGER,
+                     state TEXT);
+INSERT INTO states (celeb_id, state) VALUES(1,"New York");
+INSERT INTO states (celeb_id, state) VALUES(2,"Missouri");
+INSERT INTO states (celeb_id, state) VALUES(3,"Texas");
+INSERT INTO states (celeb_id, state) VALUES(4,"Missouri");
+INSERT INTO states (celeb_id, state) VALUES(5,"New York");
+INSERT INTO states (celeb_id, state) VALUES(6,"Texas");
+
+--Here, I selected both tables with a join to show each celebrities' name next to their profession and state.
+SELECT c.name, c.profession, s.state
+FROM celebrities c
+JOIN states s
+ON c.id=s.celeb_id;
+
+--Here, I added an additional query to show only the name, profession and state of celebrities from Texas.
+SELECT c.name, c.profession, s.state
+FROM celebrities c
+JOIN states s
+ON c.id=s.celeb_id
+WHERE s.state="Texas"
