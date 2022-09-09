@@ -77,7 +77,7 @@ SELECT COUNT(*),
 FROM card_games
 GROUP BY player_status;
 
---Lastly, I used my AND/OR statement to further filter the data to draw more specific results
+--Lastly, I used my AND/OR statement to further filter the data to draw more specific results.
 SELECT player_name FROM card_games WHERE game_name = 'Rummy' or score >500;
 
 SELECT player_name FROM card_games WHERE game_name = 'Pitch' AND score >=20;
