@@ -21,7 +21,7 @@ INSERT INTO barber_supply VALUES (15, "Cordless compressor", 2022, "tomb-45", 19
 --Here, I displayed select items sold at my store.
 SELECT * FROM barber_supply;
 
---Ordered the items sold at my store by price. 
+--Arranged the items sold at my store by price in descending order. 
 SELECT * FROM barber_supply ORDER BY price desc;
 
 --Summed up the prices of every item.
