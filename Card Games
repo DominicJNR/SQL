@@ -81,3 +81,4 @@ GROUP BY player_status;
 SELECT player_name FROM card_games WHERE game_name = 'Rummy' or score >500;
 
 SELECT player_name FROM card_games WHERE game_name = 'Pitch' AND score >=20;
+
