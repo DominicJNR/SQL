@@ -26,4 +26,3 @@ SELECT * FROM barber_supply ORDER BY price desc;
 
 --Summed up the prices of every item.
 SELECT SUM(price) FROM barber_supply;
-
