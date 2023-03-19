@@ -49,3 +49,4 @@ FROM celebrities c
 JOIN states s
 ON c.id=s.celeb_id
 WHERE s.state="Texas"
+
